@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-arquivo = r"C:\Users\ELDAN\Desktop\Inputs\LC - 26.09.2022 - BB 1 pix BR.Fernandes.xlsx"
+arquivo = r"C:\Users\ELDAN\Desktop\Inputs\Teste.xlsx
 
 dfpainel = pd.read_excel(arquivo, sheet_name="Base Painel", na_filter=False)
 dfextrato = pd.read_excel(arquivo, sheet_name="Base Extrato", na_filter=False)
@@ -150,5 +150,5 @@ for invoice in invoices:
             else:
                 dfsaida = pd.concat([dfsaida,dfauxiliar]) 
     x = x + 1
-dfsaida.to_excel(r"C:\Users\ELDAN\Desktop\LC - 26.09.2022 - BB 1 pix BR.FernandesTeste.xlsx", index = False)
+dfsaida.to_excel(r"C:\Users\ELDAN\Desktop\Teste.xlsx", index = False)
 print('Salvando Arquivo')
